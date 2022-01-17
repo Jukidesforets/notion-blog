@@ -1,8 +1,0 @@
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase /
-    RewriteCond %{HTTP_HOST} !^pokebez.cluster031.hosting.ovh\.net$ [NC,OR]
-    RewriteCond %{HTTPS} =off
-    RewriteRule ^(.*)$ https://pokebez.cluster031.hosting.ovh.net/$1 [R=301,L]
-</IfModule>
-Options -Indexes
