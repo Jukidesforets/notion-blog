@@ -14,7 +14,7 @@ export default function Home({ blogs, database }) {
       </Head>
       <header className="lg:w-screen lg:h-screen bg-gray-100">
       <nav className="sticky top-0 flex flex-row justify-between items-center py-4 px-8"><Link passHref href="/">
-        <Image width={48} height={48} className="cursor-pointer" src="/../public/img/export_small.png" alt="logor"/></Link>
+        <Image width={48} height={48} className="cursor-pointer" src="https://github.com/Jukidesforets/notion-blog/blob/main/public/img/export_small.png?raw=true" alt="logor"/></Link>
         <ul className="flex flex-row space-x-8">
             <li className="text-gray-700 font-light font-inter">Work</li>
             <li className="text-gray-700 font-light font-inter">Resume</li>
@@ -38,7 +38,7 @@ export default function Home({ blogs, database }) {
               <p className="font-test">Please, be nice, portfolio still work in progress</p>
             </div>
             <div className="lg:w-1/2">
-            <Image width={500} height={500} src="/../public/img/cover_home.jpg" alt="home"/>
+            <Image width={500} height={500} src="https://raw.githubusercontent.com/Jukidesforets/notion-blog/main/public/img/cover_home.jpg" alt="home"/>
             </div>
             
           </div>
