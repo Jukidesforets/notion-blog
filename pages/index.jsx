@@ -13,7 +13,7 @@ export default function Home({ blogs, database }) {
         <body className="bg-design-light"></body>
       </Head>
       <header className="lg:w-screen lg:h-screen bg-gray-100">
-      <nav class="sticky top-0 flex flex-row justify-between items-center py-4 px-8"><Link passHref href="/">
+      <nav className="sticky top-0 flex flex-row justify-between items-center py-4 px-8"><Link passHref href="/">
       < Image width={48} height={48} className="cursor-pointer" src="/../public/img/export_small.png" alt="logor"/></Link>
         <ul className="flex flex-row space-x-8">
             <li className="text-gray-700 font-light font-inter">Work</li>
@@ -69,8 +69,8 @@ export default function Home({ blogs, database }) {
                       <div className="flex items-center space-x-4">
                         <span className="text-gray-900 font-titles tracking-tight font-semibold">DISCOVER THE PROJECT</span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0.75 12H23.25" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M12.75 22.5L23.25 12L12.75 1.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M0.75 12H23.25" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLineJoin="round"/>
+                          <path d="M12.75 22.5L23.25 12L12.75 1.5" stroke="black" strokeWidth="1.5" strokeLineCap="round" stroke-lineJoin="round"/>
                         </svg>
                       </div>
                     </div>
