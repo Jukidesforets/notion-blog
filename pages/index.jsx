@@ -11,17 +11,20 @@ export default function Home({ blogs, database }) {
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&family=Inter:wght@300;400;600;700&family=Bitter:wght@300;400;500&family=Fraunces:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
         <body className="bg-design-light"></body>
       </Head>
-      <header className="lg:w-screen lg:h-screen bg-gray-100">
-      <nav className="sticky top-0 flex flex-row justify-between items-center py-4 px-8"><Link passHref href="/">
-        <img width="48" height="48" className="cursor-pointer" src="https://github.com/Jukidesforets/notion-blog/blob/main/public/img/export_small.png?raw=true" alt="logor"/></Link>
+      <nav className="flex flex-row justify-between items-center py-4 px-8 w-full fixed top-0 left-0 Z-10"><Link passHref href="/">
+      <img width="48" height="48" className="cursor-pointer" src="https://github.com/Jukidesforets/notion-blog/blob/main/public/img/export_small.png?raw=true" alt="logor"/></Link>
         <ul className="flex flex-row space-x-8">
-            <li className="text-gray-700 font-light font-inter">Work</li>
-            <li className="text-gray-700 font-light font-inter">Resume</li>
-            <li className="text-gray-700 font-light font-inter">Say Hi!</li>
+          <li className="text-gray-700 font-light font-inter"><Link passHref href="/">
+        <a>
+          Work
+        </a>
+      </Link></li>
+          <li className="text-gray-700 font-light font-inter">Resume</li>
+          <li className="text-gray-700 font-light font-inter">Say Hi!</li>
         </ul>
-      </nav>
-          <div className="flex lg:flex-row flex-col object-cover space-x-40 p-10 lg:mx-20 mx-4 items-center justify-center">
-            <div className="lg:w-1/2">
+		  </nav>
+      <header div className="flex flex-col lg:flex-row lg:justify-center lg:item-center lg:h-screen lg:w-screen">
+        <div className="lg:my-40 mt-40 mb-20 px-12 md:w-1/2 md:px-36 flex flex-col item-center justify-center">
               <h2 className="flex-row justify-center text-gray-800 font-test text-xl mb-4">
                 Hello, I'm <span className="text-cyan-500">Juliette</span>!
               </h2>
@@ -34,20 +37,18 @@ export default function Home({ blogs, database }) {
                 My skills range from user research, interfaces conception, workshop animation, usability testing, prototyping, design system conception and management.
                 Constantly looking for turning out amazing experience, my work is always user-centered, 
                 and focus on accessbility. </p>
-              <p className="font-test">Please, be nice, portfolio still work in progress</p>
-            </div>
-            <div className="lg:w-1/2">
-            <img width="500" height="500" src="https://raw.githubusercontent.com/Jukidesforets/notion-blog/main/public/img/cover_home.jpg" alt="home"/>
-            </div>
-            
-          </div>
+              <p className="font-test">Please, be nice, portfolio still in progress</p>
+        </div>
+        <div className="md:w-1/2">
+        <img src="https://raw.githubusercontent.com/Jukidesforets/notion-blog/main/public/img/cover_home.jpg" alt="cover" className="object-cover md:w-screen md:h-screen" />
+        </div>
       </header>
       <main className="py-20">
-        <div className="md:mx-40 sm:mx-12 pb-10">
-          <h2 className="font-test text-gray-800 font-normal rounded-full text-4xl mb-2 mt-10">.Work</h2>
+        <div className="md:mx-40 mx-10 pb-10">
+          <h2 className="font-test text-gray-800 font-bold rounded-full text-4xl mb-2 mt-10">.Work</h2>
           <div className="w-12 h-0.5 bg-gray-900"></div>
         </div>
-        <div className="lg:mx-40 mx-12 grid gap-12 lg:grid-cols-3 md:gris-cols-2 grid-cols-1 auto-row-min">
+        <div className="lg:mx-40 mx-10 grid gap-12 lg:grid-cols-3 md:gris-cols-2 grid-cols-1 auto-row-min">
         {blogs.map(blog => {
           const isPublished = blog.properties.Publication.checkbox
           if(isPublished){ 
@@ -79,7 +80,7 @@ export default function Home({ blogs, database }) {
         </div>
       </main>
       <footer className="bg-gray-100 py-20">
-        <div className="md:mx-40 sm:mx-12">
+        <div className="md:mx-40 mx-10">
           <span className="font-test test-gray-800">Made with love with Next.js, Tailwind CSS, and Notion</span>
         </div>
       </footer>

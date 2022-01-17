@@ -76,7 +76,7 @@ const BlogPage = ({ blocks, page }) => {
         
       </main>
       <footer className="bg-gray-100 py-20">
-        <div className="md:mx-40 sm:mx-12">
+        <div className="md:mx-40 mx-10">
         <span className="font-test test-gray-800">Made with love with Next.js, Tailwind CSS, and Notion</span>
         </div>
       </footer>
