@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import { getBlogs } from "../lib/api";
 import logo from "../public/img/export_small.png";
 import homePic from "../public/img/cover_home.jpg";
