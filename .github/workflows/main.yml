@@ -5,11 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy my nice code
     steps:
-    - name: Deploy to OVH hosting
-      uses: pitscher/ovh-deploy-hosting-action@v1
+    - name: MAKE IT WORK
       env:
         OVH_HOSTING_USER: ${{ secrets.OVH_HOSTING_USER }}
         OVH_HOSTING_PASSWORD: ${{ secrets.OVH_HOSTING_PASSWORD }}
         OVH_HOSTING_DOMAIN: ssh.cluster031.hosting.ovh.net:22
         REPOSITORY_NAME: notion-blog
         REPOSITORY_URL: https://github.com/Jukidesforets/notion-blog.git
+      run: sshpass -p "$OVH_HOSTING_PASSWORD" ssh $OVH_HOSTING_USER@$OVH_HOSTING_DOMAIN
