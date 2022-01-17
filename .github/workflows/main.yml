@@ -12,4 +12,4 @@ jobs:
         OVH_HOSTING_DOMAIN: ssh.cluster031.hosting.ovh.net:22
         REPOSITORY_NAME: notion-blog
         REPOSITORY_URL: https://github.com/Jukidesforets/notion-blog.git
-      run: sshpass -p "$OVH_HOSTING_PASSWORD" ssh $OVH_HOSTING_USER@$OVH_HOSTING_DOMAIN
+      run: sshpass -p -tt "$OVH_HOSTING_PASSWORD" ssh $OVH_HOSTING_USER@$OVH_HOSTING_DOMAIN
