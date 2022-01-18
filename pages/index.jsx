@@ -40,12 +40,12 @@ export default function Home({ blogs, database }) {
               <p className="font-test">Please, be nice, portfolio still in progress</p>
         </div>
         <div className="md:w-1/2">
-        <img src="https://unsplash.com/photos/toPRrcyAIUY?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" alt="cover" className="object-cover md:w-screen md:h-screen" />
+        <img src="https://images.unsplash.com/photo-1582146323811-50bcef4f3efe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2438&q=80" alt="cover" className="object-cover md:w-screen md:h-screen" />
         </div>
       </header>
       <main className="py-20">
         <div className="md:mx-40 mx-10 pb-10">
-          <h2 className="font-test text-gray-800 font-bold rounded-full text-4xl mb-2 mt-10">.Work</h2>
+          <h2 className="font-test text-gray-800 font-bold text-4xl mb-2 mt-10">.Work</h2>
           <div className="w-12 h-0.5 bg-gray-900"></div>
         </div>
         <div className="lg:mx-40 mx-10 grid gap-12 lg:grid-cols-3 md:gris-cols-2 grid-cols-1 auto-row-min">
@@ -55,7 +55,7 @@ export default function Home({ blogs, database }) {
           console.log(blog)
           return(
               <Link passHref key={blog.id} href={`/blog/${blog.id}`}>
-                  <a className="shadow shadow-4xl rounded-3xl overflow-hidden">
+                  <a className="shadow shadow-4xl overflow-hidden">
                     <div className="max-w-lg max-w-full overflow-hidden">
                     <img className=" object-cover transform transition-all hover:scale-125" src={blog.cover.file.url}/>
                     </div>
