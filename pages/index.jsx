@@ -40,7 +40,7 @@ export default function Home({ blogs, database }) {
               <p className="font-test">Please, be nice, portfolio still in progress</p>
         </div>
         <div className="md:w-1/2">
-        <img src="https://raw.githubusercontent.com/Jukidesforets/notion-blog/main/public/img/cover_home.jpg" alt="cover" className="object-cover md:w-screen md:h-screen" />
+        <img src="https://unsplash.com/photos/toPRrcyAIUY?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink" alt="cover" className="object-cover md:w-screen md:h-screen" />
         </div>
       </header>
       <main className="py-20">
