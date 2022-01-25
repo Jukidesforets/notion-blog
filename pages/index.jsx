@@ -19,8 +19,6 @@ export default function Home({ blogs, database }) {
           Work
         </a>
       </Link></li>
-          <li className="text-gray-700 font-light font-inter">Resume</li>
-          <li className="text-gray-700 font-light font-inter">Say Hi!</li>
         </ul>
 		  </nav>
       <header div className="flex flex-col lg:flex-row lg:justify-center lg:item-center lg:h-screen lg:w-screen">

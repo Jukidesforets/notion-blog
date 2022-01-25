@@ -37,7 +37,6 @@ const BlogPage = ({ blocks, page }) => {
         </a>
       </Link></li>
           <li className="text-gray-700 font-light font-inter">Resume</li>
-          <li className="text-gray-700 font-light font-inter">Say Hi!</li>
         </ul>
 		  </nav>
       <header div className="flex flex-col md:flex-row md:justify-center md:item-center md:h-screen md:w-screen">
