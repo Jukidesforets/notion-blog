@@ -20,7 +20,7 @@ const BlogPage = ({ blocks, page }) => {
   const client = page.properties.Client.select.name;
   const role = page.properties.Role.rich_text[0].plain_text;
   const tools = page.properties.Tools.rich_text[0].plain_text;
-  const cover = page.cover.file.url;
+  const cover = page.cover.external.url;
   return (
     <>
       <Head>

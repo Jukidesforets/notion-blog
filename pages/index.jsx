@@ -55,7 +55,7 @@ export default function Home({ blogs, database }) {
               <Link passHref key={blog.id} href={`/blog/${blog.id}`}>
                   <a className="shadow shadow-4xl overflow-hidden">
                     <div className="max-w-lg max-w-full overflow-hidden">
-                    <img className=" object-cover transform transition-all hover:scale-125" src={blog.cover.file.url}/>
+                    <img className=" object-cover transform transition-all hover:scale-125" src={blog.cover.external.url}/>
                     </div>
                     <div className="max-w-2xl p-8">
                       <h2 className="text-gray-800 font-test text-3xl font-bold mb-5">{blog.properties.Name.title[0].plain_text}</h2>
