@@ -35,6 +35,8 @@ export default function Home({ blogs, database }) {
                 My skills range from user research, interfaces conception, workshop animation, usability testing, prototyping, design system conception and management.
                 Constantly looking for turning out amazing experience, my work is always user-centered, 
                 and focus on accessbility. </p>
+              <span className="mb-4 text-gray-700 font-light font-inter leading-8">Sometimes I take drone and camera photography for fun:</span><Link className="mb-4 text-cyan-700 underline font-light font-inter leading-8" href="https://www.behance.net/juliettebrt">Have a look here!</Link>
+
               <p className="font-test">Please, be nice, portfolio still in progress</p>
         </div>
         <div className="md:w-1/2">
