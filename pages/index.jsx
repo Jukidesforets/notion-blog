@@ -37,7 +37,7 @@ export default function Home({ blogs, database }) {
                 and focus on accessbility. </p>
               <p className="mb-4 text-gray-700 font-light font-inter leading-8">Sometimes I take drone and camera photographies for fun: <span className="text-cyan-700 underline font-light font-inter leading-8"  ><Link href="https://www.behance.net/juliettebrt">Have a look here!</Link></span></p>
 
-              <p className="mt-2 font-test">Please, be nice, portfolio still in progress</p>
+              <p className="mt-2 font-test text-xl">&#128679;  Please, be nice, portfolio still in progress  &#128679;</p>
         </div>
         <div className="md:w-1/2">
         <img src="https://images.unsplash.com/photo-1582146323811-50bcef4f3efe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2438&q=80" alt="cover" className="object-cover md:w-screen md:h-screen" />
