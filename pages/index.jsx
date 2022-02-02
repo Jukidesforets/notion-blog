@@ -35,9 +35,9 @@ export default function Home({ blogs, database }) {
                 My skills range from user research, interfaces conception, workshop animation, usability testing, prototyping, design system conception and management.
                 Constantly looking for turning out amazing experience, my work is always user-centered, 
                 and focus on accessbility. </p>
-              <span className="mb-4 text-gray-700 font-light font-inter leading-8">Sometimes I take drone and camera photography for fun:</span><Link className="mb-4 text-cyan-700 underline font-light font-inter leading-8" href="https://www.behance.net/juliettebrt">Have a look here!</Link>
+              <p className="mb-4 text-gray-700 font-light font-inter leading-8">Sometimes I take drone and camera photographies for fun: <span className="text-cyan-700 underline font-light font-inter leading-8"  ><Link href="https://www.behance.net/juliettebrt">Have a look here!</Link></span></p>
 
-              <p className="font-test">Please, be nice, portfolio still in progress</p>
+              <p className="mt-2 font-test">Please, be nice, portfolio still in progress</p>
         </div>
         <div className="md:w-1/2">
         <img src="https://images.unsplash.com/photo-1582146323811-50bcef4f3efe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2438&q=80" alt="cover" className="object-cover md:w-screen md:h-screen" />
@@ -63,7 +63,7 @@ export default function Home({ blogs, database }) {
                       <h2 className="text-gray-800 font-test text-3xl font-bold mb-5">{blog.properties.Name.title[0].plain_text}</h2>
                       <p className="mb-4 text-gray-700 font-light font-inter leading-8 mb-5">{blog.properties.Tagline.rich_text[0].plain_text}</p>
                       <div className="flex items-center space-x-4 mb-10">
-                      <img className="h-10" src={blog.properties.Logo.files.length ? blog.properties.Logo.files[0].file.url : ""}/>
+                      <img className="h-10" src={blog.properties.Logo.files.length ? blog.properties.Logo.files[0].external.url : ""}/>
                         <span className="text-gray-700 font-titles tracking-widest ">{blog.properties.Client.select.name}</span>
                       </div>
                       <div className="flex items-center space-x-4">
