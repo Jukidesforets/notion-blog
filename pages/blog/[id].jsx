@@ -28,7 +28,7 @@ const BlogPage = ({ blocks, page }) => {
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&family=Inter:wght@300;400;600;700&family=Bitter:wght@300;400;500&family=Fraunces:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
       </Head>
-      <nav className="flex flex-row justify-between items-center py-4 px-8 w-full fixed top-0 left-0 Z-10"><Link passHref href="/">
+      <nav className="flex flex-row justify-between items-center py-4 px-8 w-full fixed top-0 left-0 stick"><Link passHref href="/">
       <img width="48" height="48" className="cursor-pointer" src="https://github.com/Jukidesforets/notion-blog/blob/main/public/img/export_small.png?raw=true" alt="logor"/></Link>
         <ul className="flex flex-row space-x-8">
           <li className="text-gray-700 font-light font-inter"><Link passHref href="/">
@@ -36,7 +36,6 @@ const BlogPage = ({ blocks, page }) => {
           Work
         </a>
       </Link></li>
-          <li className="text-gray-700 font-light font-inter">Resume</li>
         </ul>
 		  </nav>
       <header div className="flex flex-col md:flex-row md:justify-center md:item-center md:h-screen md:w-screen">
