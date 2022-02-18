@@ -22,7 +22,7 @@ export default function Home({ blogs, database }) {
         </ul>
 		  </nav>
       <header div className="flex flex-col lg:flex-row lg:justify-center lg:item-center lg:h-screen lg:w-screen">
-        <div className="lg:my-40 mt-40 mb-20 px-12 md:w-1/2 md:px-36 flex flex-col item-center justify-center">
+        <div className="lg:my-40 mt-40 mb-20 px-12 md:px-36 flex flex-col item-center justify-center">
               <h2 className="flex-row justify-center text-gray-800 font-test text-xl mb-4">
                 Hello, I'm <span className="text-cyan-500">Juliette</span>!
               </h2>
@@ -35,12 +35,7 @@ export default function Home({ blogs, database }) {
                 My skills range from user research, interfaces conception, workshop animation, usability testing, prototyping, design system conception and management.
                 Constantly looking for turning out amazing experience, my work is always user-centered, 
                 and focus on accessbility. </p>
-              <p className="mb-4 text-gray-700 font-light font-inter leading-8">Sometimes I take drone and camera photographies for fun: <span className="text-cyan-700 underline font-light font-inter leading-8"  ><Link href="https://www.behance.net/juliettebrt">Have a look here!</Link></span></p>
-
               <p className="mt-2 font-test text-xl">&#128679;  Please, be nice, portfolio still in progress  &#128679;</p>
-        </div>
-        <div className="md:w-1/2">
-        <img src="https://github.com/Jukidesforets/notion-blog/blob/main/public/img/home.jpg?raw=true" alt="cover" className="object-cover md:w-screen md:h-screen" />
         </div>
       </header>
       <main className="py-20">
