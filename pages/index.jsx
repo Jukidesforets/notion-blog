@@ -34,7 +34,7 @@ export default function Home({ blogs, database }) {
                 in big companies, and start-ups.
                 My skills range from user research, interfaces conception, workshop animation, usability testing, prototyping, design system conception and management.
                 Constantly looking for turning out amazing experience, my work is always user-centered, 
-                and focus on accessbility. </p>
+                and focus on accessbility.</p>
               <p className="mt-2 font-test text-xl">&#128679;  Please, be nice, portfolio still in progress  &#128679;</p>
         </div>
       </header>
