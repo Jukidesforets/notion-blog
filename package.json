@@ -7,6 +7,9 @@
     "build": "next build",
     "start": "next start"
   },
+  "engines": {
+    "node" : "16.13.2"
+  },
   "dependencies": {
     "@notionhq/client": "^0.4.11",
     "classnames": "^2.2.6",
